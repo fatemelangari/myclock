@@ -4,68 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.fatemeh.myclock.MainActivity">
+    tools:context="com.example.fatemeh.myclock1.MainActivity">
 
-    <LinearLayout
-        android:layout_width="383dp"
+    <RelativeLayout
+        android:layout_width="382dp"
         android:layout_height="280dp"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:ignore="MissingConstraints">
-
-        >
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
         >
 
+<TextView
+    android:id="@+id/txt1"
+    android:layout_width="80dp"
+    android:layout_height="42dp"
+    android:layout_alignParentTop="true"
+    android:text="4"
+    android:paddingLeft="58dp"
 
-        <TextView
-            android:id="@+id/txt1"
-            android:layout_width="115dp"
-            android:layout_height="36dp"
-            android:gravity="center"
-            android:text="4"
-            />
-
+    />
         <TextView
             android:id="@+id/txt2"
-            android:layout_width="19dp"
-            android:layout_height="36dp"
-            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="42dp"
+            android:layout_centerHorizontal="true"
             android:text=":"
+            android:paddingLeft="7dp"
+
             />
 
         <TextView
             android:id="@+id/txt3"
-            android:layout_width="92dp"
-            android:layout_height="36dp"
-            android:gravity="center"
+            android:layout_width="95dp"
+            android:layout_height="42dp"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/txt2"
             android:text="2"
+
             />
 
         <TextView
             android:id="@+id/txt4"
-            android:layout_width="85dp"
-            android:layout_height="36dp"
-            android:gravity="center"
+            android:layout_width="82dp"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
             android:text="5"
+
             />
 
         <TextView
             android:id="@+id/txt5"
-            android:layout_width="95dp"
-            android:layout_height="match_parent"
-            android:gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
             android:text="E"
-            android:paddingBottom="15dp"
-            android:paddingRight="25dp"
+
             />
 
-    </LinearLayout>
 
-    </LinearLayout>
+
+    </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>
